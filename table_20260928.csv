@@ -1,0 +1,12 @@
+,From (Arduino),To (Component),Signal,Wire Color,Notes
+1,5V,HC-05 VCC,Power,Red,5V OK on breakout (onboard regulator)
+2,GND,HC-05 GND,Ground,Black,Common ground
+3,D10 (RX),HC-05 TXD,Serial RX,Green,SoftwareSerial RX
+4,D11 (TX),HC-05 RXD,Serial TX,Blue,Via 1k/2k divider to 3.3V
+5,A0,Piezo leg 1,Analog in,Yellow,—
+6,GND,Piezo leg 2,Ground,Black,Add 1M across piezo legs
+7,5V,IR sensor VCC,Power,Red,—
+8,GND,IR sensor GND,Ground,Black,—
+9,D2,IR sensor OUT,Digital in,Orange,HIGH = removed (no reflection)
+10,D13,220Ω → LED anode,Status LED,White,Built-in LED also flashes
+11,GND,LED cathode,Ground,Black,—
